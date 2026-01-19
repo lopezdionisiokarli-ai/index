@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>COLEGIO DE ESTUDIOS CIENTIFICOS Y TECNOLÓGICOS DEL ESTADO DE MÉXICO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Monserrat', Arial, sans-serif;
+    background:linear-gradient(150deg,#fde2f3,#f88cb2);
+}
+
+/* ===== CONTENEDOR ===== */
+#contenedor{
+    width:100%;
+}
+
+/* ===== SECCIONES ===== */
+section, header, nav, footer{
+    width:100%;
+}
+
+/* ===== TITULOS ===== */
+h2{
+    text-align:center;
+    color:#110a0f;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.centrado{
+    text-align:center;
+    font-size:24px;
+    line-height:2;
+}
+
+/* ===== FRAME ===== */
+.frame{
+    width:100%;
+    padding:50px;
+    background:#f014e5;
+    border:6px dashed #131313;
+}
+
+/* ===== CONTENIDO COMPLETO ===== */
+iframe, video{
+    width:100%;
+    height:80vh;
+    border:none;
+}
+
+.frame img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* ===== ENCABEZADO ANIMADO ===== */
+.encabezado{
+    position:relative;
+    width:100%;
+    height:20vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:black;
+}
+
+.imagenes-encabezado{
+    position:absolute;
+    inset:0;
+}
+
+.imagenes-encabezado img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0.6;
+}
+
+.imagenes-encabezado img:nth-child(1){animation:img1 20s infinite;}
+.imagenes-encabezado img:nth-child(2){animation:img2 20s infinite;}
+.imagenes-encabezado img:nth-child(3){animation:img3 20s infinite;}
+.imagenes-encabezado img:nth-child(4){animation:img4 20s infinite;}
+.imagenes-encabezado img:nth-child(5){animation:img5 20s infinite;}
+
+@keyframes img1{
+  0%{transform:translateX(-100%);}
+  10%,20%{transform:translateX(0);}
+  30%,100%{transform:translateX(100%);}
+}
+
+@keyframes img2{
+  0%{transform:translateX(100%);}
+  20%,30%{transform:translateX(0);}
+  40%,100%{transform:translateX(-100%);}
+}
+
+@keyframes img3{
+  0%{transform:translateY(-100%);}
+  40%,50%{transform:translateY(0);}
+  60%,100%{transform:translateY(100%);}
+}
+
+@keyframes img4{
+  0%{transform:translateY(100%);}
+  60%,70%{transform:translateY(0);}
+  80%,100%{transform:translateY(-100%);}
+}
+
+@keyframes img5{
+  0%{transform:scale(1.3);}
+  80%,90%{transform:scale(1);}
+  100%{transform:scale(1.3);}
+}
+.titulo-encabezado{
+    position:relative;
+    z-index:10;
+    text-align:center;
+}
+
+.titulo-encabezado h1{
+    font-family:'Monserrat';
+    font-size:40px;
+    
+    text-shadow: black;
+}
+
+/* ===== IMAGEN APARTADO ===== */
+.apartado img{
+    width:100%;
+
+    height:50vh;
+    object-fit:cover;
+}
+
+/* ===== MENÚ ===== */
+.menu-horizontal{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    background:linear-gradient(90deg,#fde2f3,#f3e8ff,#f8bbd0);
+    padding:60px 0;
+}
+
+.menu-horizontal a{
+    margin:10px 20px;
+    font-size:20px;
+    color:black;
+    text-decoration:none;
+    font-family:'Monserrat';
+}
+
+.menu-horizontal a:hover{
+    color:#ff69b4;
+}
+
+/* ===== SECCIONES DE CONTENIDO ===== */
+section{
+    background:#ee6d9a;
+    padding:60px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:linear-gradient(135deg,#fde2f3,#fa538e,#f3e8ff);
+    padding:80px 20px;
+    text-align:center;
+    font-size:20px;
+}
+</style>
+</head>
+
+<body>
+<div id="contenedor">
+
+<header class="encabezado" id="inicio">
+<div class="imagenes-encabezado">
+<img src="a.jpeg">
+<img src="b.jpeg">
+<img src="c.jpeg">
+<img src="d.jpeg">
+<img src="f.jpeg">
+</div>
+<div class="titulo-encabezado">
+<h1>Proyecto Productivo CECYTEM </h1>
+</div>
+</header>
+
+<section class="apartado">
+<img src="encabe.jpeg">
+</section>
+
+<nav class="menu-horizontal">
+<a href="#inicio">Banner</a>
+<a href="#intro">Introducción</a>
+<a href="#objetivo">Objetivo</a>
+<a href="#pdf">PDF</a>
+<a href="#sopa">Sopa de Letras</a>
+<a href="#crucigrama">Crucigrama</a>
+<a href="#caligrama">Caligrama</a>
+<a href="#folleto">Folleto</a>
+<a href="#triptico">Tríptico</a>
+<a href="#infografia">Infografía</a>
+<a href="#presentacion">Presentación</a>
+<a href="#video educativo">Video</a>
+<a href="#visitanos">Video</a>
+</nav>
+
+<section id="intro">
+<h2>💖 Introducción</h2>
+<p class="centrado">Este proyecto tiene como finalidad informar y concientizar a los jóvenes sobre los riesgos del consumo de sustancias psicoactivas mediante recursos digitales interactivos.</p>
+</section>
+
+<section id="objetivo">
+<h2>🎯 Objetivo</h2>
+<p class="centrado">Promover hábitos saludables y prevenir adicciones utilizando herramientas visuales, educativas y tecnológicas.</p>
+</section>
+
+<section id="pdf">
+<h2>📑 Documento PDF</h2>
+<div class="frame">
+<a href="Archivo.pdf" target="_blank">Abrir PDF</a>
+</div>
+</section>
+
+<section id="sopa">
+<h2>🧩 Sopa de Letras</h2>
+<div class="frame">
+<a href="https://www.educima.com/wordsearches/sustancias_psicoactivas-5897c44ad4ba7a87e01c5c815478951b" target="_blank">Abrir Sopa de Letras</a>
+</div>
+</section>
+
+<section id="crucigrama">
+<h2>✏️ Crucigrama</h2>
+<div class="frame">
+<iframe src="https://crosswordlabs.com/embed/tipo-se-sustacias-psicoactivas"></iframe>
+</div>
+</section>
+
+<section id="caligrama">
+<h2>✒️ Caligrama</h2>
+<div class="frame">
+<img src="Marriage 3.png">
+</div>
+</section>
+
+<section id="folleto">
+<h2>📄 Volante</h2>
+<div class="frame">
+<iframe src="https://www.canva.com/design/DAG0GWgVgEA/tcK4Y3sJYmW3bZXc9RfzVg/view?embed"></iframe>
+</div>
+</section>
+
+<section id="triptico">
+<h2>📘 Tríptico</h2>
+<div class="frame">
+<iframe src="https://www.canva.com/design/DAG0F1RHdeU/HSavBpm6iFiBK-V36ahjdA/view?embed"></iframe>
+</div>
+</section>
+
+<section id="infografia">
+<h2>📊 Infografía</h2>
+<div class="frame">
+<iframe src="https://www.canva.com/design/DAG0FzQzvqs/g1VzRnxZNXuzHvMCZzTwzw/view?embed"></iframe>
+</div>
+</section>
+
+<section id="presentacion">
+<h2>🎥 Presentación</h2>
+<div class="frame">
+<video controls>
+<source src="precentacion modulo0.pptx.mp4">
+</video>
+</div>
+</section>
+
+<section id="video educativo">
+<h2>🎬 Video Educativo</h2>
+<div class="frame">
+<video controls>
+<source src="video.mp4">
+</video>
+</div>
+</section>
+
+<section id="visitanos">
+<h2>📺 Visítanos</h2>
+<div class="frame">
+<a href="https://youtu.be/rJXX8eeBCpo?si=Mw_sD0NNz45gJOse" target="_blank">
+👉 Ver nuestro video en YouTube
+</a>
+</div>
+</section>
+
+<footer>
+<p>© 2025 Instituto Tecnológico Avanzado del Valle</p>
+</footer>
+
+</div>
+</body>
+</html>
